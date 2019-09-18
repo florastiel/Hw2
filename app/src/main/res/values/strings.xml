@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GPA Calculator</string>
+    <string name="calculate_gpa">Calculate GPA</string>
+    <string name="class_1_grade">Class 1 grade</string>
+    <string name="class_2_grade">Class 2 grade</string>
+    <string name="class_5_grade">Class 5 grade</string>
+    <string name="class_1">Class 1</string>
+    <string name="class_3">Class 3</string>
+    <string name="class_5">Class 5</string>
+    <string name="class_4">Class 4</string>
+    <string name="gpa">GPA</string>
+    <string name="class_2">Class 2</string>
+    <string name="clear">Clear</string>
+</resources>

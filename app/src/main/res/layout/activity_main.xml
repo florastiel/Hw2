@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/calcButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calculate"
+        android:text="@string/calculate_gpa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/class1edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/class_1_grade"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@id/class1text"
+        app:layout_constraintLeft_toLeftOf="@id/class1text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/class1text" />
+
+    <EditText
+        android:id="@+id/class2edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/class_2_grade"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@id/class2text"
+        app:layout_constraintLeft_toLeftOf="@id/class2text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/class2text" />
+
+    <EditText
+        android:id="@+id/class3edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Class 3 grade"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@id/class3text"
+        app:layout_constraintLeft_toLeftOf="@id/class3text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/class3text" />
+
+    <EditText
+        android:id="@+id/class4edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Class 4 grade"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@id/class4text"
+        app:layout_constraintLeft_toLeftOf="@id/class4text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/class4text" />
+
+    <EditText
+        android:id="@+id/class5edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/class_5_grade"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@id/class5text"
+        app:layout_constraintLeft_toLeftOf="@id/class5text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/class5text" />
+
+
+    <TextView
+        android:id="@+id/class1text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/class_1"
+        app:layout_constraintBottom_toTopOf="@id/calcButton"
+        app:layout_constraintHorizontal_bias="0.306"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275" />
+
+    <TextView
+        android:id="@+id/class2text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/class_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.306"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/class1text"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/class3text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/class_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.306"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/class2text"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/class5text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/class_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.306"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/class4text"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/class4text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/class_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.306"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/class3text"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gpa"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calcButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
